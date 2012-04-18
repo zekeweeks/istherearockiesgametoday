@@ -1,31 +1,22 @@
-# Is there a Giants game today?
+# Is there a Rockies game today?
 
-## Getting the code
+This is my little Rockies-specific fork of [isthereagiantstoday.com](http://isthereagiantsgametoday.com), which is itself a Github project based at https://github.com/lforrest/isthereagiantsgametoday . 
 
-To get a local copy of the current code, clone it using git:
+## Differences from isthereagiantsgametoday.com
 
-$ git clone git://github.com/lforrest/isthereagiantsgametoday.git isthereagiantsgametoday
-$ cd isthereagiantsgametoday
+* Rockies purple and gray!
+* Added a script to help automate data population from a Google spreadsheet at https://docs.google.com/spreadsheet/pub?key=0Asw39a0iCguZdC1YWnJwTlY1OE9yeFhWMHFWYTBIVkE&output=html
+* [CSS typographic pedantry](http://css-tricks.com/sans-serif/)
 
 ## Contributing
 
-isthereagiantsgametoday.com is a community-driven project, so contributors are always welcome. Simply fork our repo and contribute away. Good starting places for picking a bug are the TODOs listed below.
+This Github project is my first public repository! Please bear with me if I'm noobish in my management of a project open to the community.
 
-and of course our open Github issues:
+If you encounter any problems, please advise me of them by opening an issue at https://github.com/zekeweeks/istherearockiesgametoday/issues . You are also invited to submit any Rockies-specific enhancements to this project via pull requests; if your contribution might benefit people using this for other teams as well, please consider contributing to [the upstream project](https://github.com/lforrest/isthereagiantsgametoday) instead.
 
-    https://github.com/lforrest/isthereagiantsgametoday/issues
-
-For better consistency and long-term stability, please do look around the code and try to follow our conventions. More information about the contributor process can be found on the contributor wiki page.
-
-If you don't want to hack on the project or have little spare time, you still can help! Just open http://isthereagiantsgametoday.com report any issues you see.
-
-Our Github contributors so far:
-
-    https://github.com/lforrest/isthereagiantsgametoday/contributors
-
-You can add your name to it! :)
 
 ## TODOs
 
-* Offline support
-* Fun daily messages and graphics
+* Prettier color scheme (CSS pull requests welcomed!)
+* Fully automate game data population.
+* Add the Rockies' games at the 2012 World Series :-)
