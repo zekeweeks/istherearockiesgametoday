@@ -132,7 +132,7 @@
                   $("#game .date").text(nextGame.date);
                   $("#game .summary").text("Rockies will play the " + nextGame.opponent);
                   $("#game .location").text(nextGame.location);
-                  
+                  var nextGameDate = new Date(nextGame.date);
                   // Formate next game date as day of the week
                   var weekday = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"];
                   var nextGameDay = weekday[nextGameDate.getDay()];
