@@ -115,7 +115,7 @@
                     $(".fill-in").text("YES");
                     $("#game .summary").text("Rockies play the " + todaysGame.opponent);
                     $("#game .location").text(todaysGame.location);
-                    $("#game .time").text(todaysGame.time);
+                    $("#game .time").text(todaysGame.time.replace(/^0+/, ''));
                     if (todaysGame.location == "Coors Field") {
                         $("body").addClass("home");
                         $("#yesno .homeaway").text("At home");
@@ -136,8 +136,8 @@
                   // Formate next game date as day of the week
                   var weekday = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"];
                   var nextGameDay = weekday[nextGameDate.getDay()];
-                  $("#game .day").text("on " + nextGameDay);
-                  $("#game .time").text(nextGame.time);
+                  $("#game .day").text("on " + nextGameDay + ", " + (1 + nextGameDate.getMonth()) + "/" + nextGameDate.getDate() );
+                  $("#game .time").text(nextGame.time.replace(/^0+/, ''));
                   // if (nextGame.location == "Coors Field") {
                   //  $("#nextgame .location").addClass("homegame");
                   //   $("body").addClass("homegame-bg");
