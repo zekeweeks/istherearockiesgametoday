@@ -29,7 +29,7 @@ for row in raw_schedule:
 
     # Trim the subject description down to the opponent name
     opponent = row[3]
-    opponent = opponent.replace('at', '').replace('Rockies', '').strip()
+    opponent = opponent.replace(' at ', '').replace('Rockies', '').strip()
 
     json_data = { "date": row[0],
                   "opponent": opponent,
